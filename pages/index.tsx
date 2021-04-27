@@ -18,6 +18,18 @@ export default function Home() {
       <h2>What makes Celo special?</h2>
       <p>Coming soon...</p>
 
+      <h2>What are CELO, cUSD and cEUR?</h2>
+      <p>
+        cUSD and cEUR are stable coins on the Celo network. They track the price
+        1-to-1 of their real world counterparts. Stable coins are important to a
+        blockchain platform as it enables users to send and receive amounts that
+        aren't subject to large fluctuations in price.
+      </p>
+      <p>
+        CELO is the platforms native asset and is used to vote for validator
+        groups (staking) and vote on governance proposals.
+      </p>
+
       <h2>Buying CELO</h2>
       <p>
         You can buy CELO, cUSD and cEUR at most major exchanges,
