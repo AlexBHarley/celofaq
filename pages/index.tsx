@@ -5,8 +5,14 @@ export default function Home() {
       <p>
         Celo is a mobile first, decentralised blockchain platform enabling
         access to financial services. More information can be found in the{' '}
-        <a href="https://docs.celo.org/overview">documentation</a> on{' '}
-        <a href="https://celo.org">celo.org</a>.
+        <a target="_blank" href="https://docs.celo.org/overview">
+          documentation
+        </a>{' '}
+        on{' '}
+        <a target="_blank" href="https://celo.org">
+          celo.org
+        </a>
+        .
       </p>
 
       <h2>What makes Celo special?</h2>
@@ -17,17 +23,26 @@ export default function Home() {
         You can buy CELO, cUSD and cEUR at most major exchanges,
         <ul>
           <li>
-            <a href="https://binance.com">Binance</a>
+            <a target="_blank" href="https://binance.com">
+              Binance
+            </a>
           </li>
           <li>
-            <a href="https://coinbase.com">Coinbase</a>
+            <a target="_blank" href="https://coinbase.com">
+              Coinbase
+            </a>
           </li>
           <li>
-            <a href="https://bittrex.com">Bittrex</a>
+            <a target="_blank" href="https://bittrex.com">
+              Bittrex
+            </a>
           </li>
         </ul>
         to name a few. For a more in depth look, see the{' '}
-        <a href="https://coinmarketcap.com/currencies/celo/markets/">
+        <a
+          target="_blank"
+          href="https://coinmarketcap.com/currencies/celo/markets/"
+        >
           Coin Market Cap exchanges overview
         </a>
         .
@@ -47,21 +62,53 @@ export default function Home() {
         You can currently stake via the following methods:
         <ul>
           <li>
-            <a href="https://plock.fi">Plock.fi</a>
+            <a target="_blank" href="https://plock.fi">
+              Plock.fi
+            </a>
           </li>
           <li>
-            <a href="https://celowallet.app">Celo Wallet</a>
+            <a target="_blank" href="https://celowallet.app">
+              Celo Wallet
+            </a>
           </li>
           <li>
-            <a href="https://celoterminal.com">Celo Terminal</a>
+            <a target="_blank" href="https://celoterminal.com">
+              Celo Terminal
+            </a>
           </li>
           <li>
-            <a href="https://docs.celo.org/command-line-interface/introduction">
+            <a
+              target="_blank"
+              href="https://docs.celo.org/command-line-interface/introduction"
+            >
               Celo CLI
             </a>{' '}
             - for advanced users only.
           </li>
         </ul>
+      </p>
+
+      <h2>Help! I sent CELO to my Ethereum address</h2>
+      <p>
+        See this guide{' '}
+        <a
+          target="_blank"
+          href="https://docs.celo.org/celo-owner-guide/eth-recovery"
+        >
+          here
+        </a>
+        .
+      </p>
+      <h2>Help! I sent ETH to my Celo address</h2>
+      <p>
+        See this guide{' '}
+        <a
+          target="_blank"
+          href="https://docs.celo.org/celo-owner-guide/celo-recovery"
+        >
+          here
+        </a>
+        .
       </p>
     </div>
   );
