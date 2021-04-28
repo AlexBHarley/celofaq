@@ -12,6 +12,8 @@ module.exports = {
             h2: {
               fontFamily: 'EB Garamond',
               fontWeight: 400,
+              marginTop: '1em',
+              marginBottom: '0.5em',
             },
             h3: {
               fontFamily: 'Jost',

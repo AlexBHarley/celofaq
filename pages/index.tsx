@@ -29,7 +29,7 @@ function Collapsible({ title, children }: any) {
 export default function Home() {
   return (
     <div className="max-w-screen-sm mx-auto py-10 prose px-4">
-      <div className="inline-flex items-center space-x-3">
+      <div className="inline-flex items-center space-x-3 mb-2">
         <Logo className="h-6 w-6" />
         <h1
           style={{
@@ -39,12 +39,12 @@ export default function Home() {
             marginLeft: '0.5em',
           }}
         >
-          celo,
-        </h1>
-        <h1 className="inline mb-0" style={{ marginBottom: '0px' }}>
-          the platform for mobile DeFi
+          celo
         </h1>
       </div>
+      <h2 style={{ marginBottom: '1em', marginTop: '0.5em' }}>
+        The Platform for Mobile DeFi
+      </h2>
       <p>
         Celo is a mobile first, decentralised blockchain platform enabling
         access to financial services. More information can be found in the{' '}
