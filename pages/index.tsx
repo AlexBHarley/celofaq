@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import ReactCollapsible from 'react-collapsible';
 import { ChevronRightIcon, ChevronDownIcon } from '@heroicons/react/solid';
+import { Logo } from '../components';
 
 function Collapsible({ title, children }: any) {
   const [open, setOpen] = useState(false);
@@ -28,7 +29,22 @@ function Collapsible({ title, children }: any) {
 export default function Home() {
   return (
     <div className="max-w-screen-sm mx-auto py-10 prose">
-      <h1>Celo - The Platform for Mobile DeFi</h1>
+      <div className="inline-flex items-center space-x-3">
+        <Logo className="h-6 w-6" />
+        <h1
+          style={{
+            fontFamily: 'Jost',
+            display: 'inline',
+            marginBottom: '0px',
+            marginLeft: '0.5em',
+          }}
+        >
+          celo,
+        </h1>
+        <h1 className="inline mb-0" style={{ marginBottom: '0px' }}>
+          the platform for mobile DeFi
+        </h1>
+      </div>
       <p>
         Celo is a mobile first, decentralised blockchain platform enabling
         access to financial services. More information can be found in the{' '}

@@ -1,11 +1,42 @@
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
+    extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            h1: {
+              fontFamily: 'EB Garamond',
+              fontWeight: 400,
+            },
+            h2: {
+              fontFamily: 'EB Garamond',
+              fontWeight: 400,
+            },
+            h3: {
+              fontFamily: 'Jost',
+              fontWeight: 400,
+            },
+            h4: {
+              fontFamily: 'EB Garamond',
+              fontWeight: 400,
+            },
+            h5: {
+              fontFamily: 'Jost',
+              fontWeith: 500,
+            },
+            h6: {
+              fontFamily: 'Jost',
+              fontWeith: 500,
+            },
+            p: {
+              fontFamily: 'EB Garamond',
+              fontWeight: 400,
+            },
+          },
+        },
+      }),
+    },
   },
   plugins: [require('@tailwindcss/typography')],
 };
