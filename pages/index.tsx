@@ -28,7 +28,7 @@ function Collapsible({ title, children }: any) {
 
 export default function Home() {
   return (
-    <div className="max-w-screen-sm mx-auto py-10 prose">
+    <div className="max-w-screen-sm mx-auto py-10 prose px-4">
       <div className="inline-flex items-center space-x-3">
         <Logo className="h-6 w-6" />
         <h1
