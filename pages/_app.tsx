@@ -2,6 +2,8 @@ import 'tailwindcss/tailwind.css';
 import '../styles/index.css';
 import Head from 'next/head';
 
+import { Footer } from '../components';
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -22,7 +24,13 @@ function MyApp({ Component, pageProps }) {
           />
         )}
       </Head>
-      <Component {...pageProps} />
+
+      <div className="flex flex-col" style={{ minHeight: '100vh' }}>
+        <div style={{ flex: '1 0 auto' }}>
+          <Component {...pageProps} />
+        </div>
+        <Footer />
+      </div>
     </>
   );
 }

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ReactCollapsible from 'react-collapsible';
 import { ChevronRightIcon, ChevronDownIcon } from '@heroicons/react/solid';
-import { Logo } from '../components';
+import { Logo, Footer } from '../components';
 
 function Collapsible({ title, children }: any) {
   const [open, setOpen] = useState(false);
@@ -57,10 +57,6 @@ export default function Home() {
         </a>
         .
       </p>
-
-      <Collapsible title="What makes Celo special?">
-        <p>Coming soon...</p>
-      </Collapsible>
 
       <Collapsible title="What are CELO, cUSD and cEUR?">
         <p>
@@ -149,29 +145,56 @@ export default function Home() {
         </p>
       </Collapsible>
 
-      <Collapsible title="Help! I sent CELO to my Ethereum address">
+      <Collapsible title="Wallets">
         <p>
-          See this guide{' '}
+          You can use a few different wallets to securely store your tokens on
+          Celo.
+        </p>
+
+        <p>
+          <ul>
+            <li>
+              <a href="https://valoraapp.com">Valora</a>
+            </li>
+            <li>
+              <a href="https://celoterminal.com">Celo Terminal</a>
+            </li>
+            <li>
+              <a href="https://celowallet.app">Celo Wallet</a>
+            </li>
+            <li>
+              <a href="https://docs.celo.org/celo-owner-guide/ledger">Ledger</a>
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          Each wallet has its own benefits so please take your time to research
+          each before choosing one.
+        </p>
+      </Collapsible>
+
+      <Collapsible title="Help! I sent CELO/ETH to my Celo/Ethereum address">
+        <p>
+          Don't fret! As long as you have the private key or seed phrase for the
+          receiving account you'll be able to recover your funds.
+        </p>
+        <p>
+          See{' '}
           <a
             target="_blank"
             href="https://docs.celo.org/celo-owner-guide/eth-recovery"
           >
-            here
-          </a>
-          .
-        </p>
-      </Collapsible>
-      <Collapsible title="Help! I sent ETH to my Celo address">
-        <h2></h2>
-        <p>
-          See this guide{' '}
+            this
+          </a>{' '}
+          guide if you've sent ETH to your Celo address, and{' '}
           <a
             target="_blank"
             href="https://docs.celo.org/celo-owner-guide/celo-recovery"
           >
-            here
-          </a>
-          .
+            this one
+          </a>{' '}
+          if you've sent CELO to an Ethereum address.
         </p>
       </Collapsible>
     </div>
