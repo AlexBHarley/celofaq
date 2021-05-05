@@ -197,6 +197,28 @@ export default function Home() {
           if you've sent CELO to an Ethereum address.
         </p>
       </Collapsible>
+
+      <Collapsible title="Where can I chat with the community?">
+        <p>
+          Jump into the{' '}
+          <a href="https://chat.celo.org" target="_blank">
+            Celo Discord
+          </a>{' '}
+          and meet people from all over the world involved in the Celo
+          ecosystem.
+        </p>
+      </Collapsible>
+
+      <Collapsible title="How can I improve this page?">
+        <p>
+          Celo FAQ is of course open source! You can edit this page by
+          submitting a pull request{' '}
+          <a href="https://github.com/AlexBHarley/celofaq" target="_blank">
+            here
+          </a>
+          .
+        </p>
+      </Collapsible>
     </div>
   );
 }
