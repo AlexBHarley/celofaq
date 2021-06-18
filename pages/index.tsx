@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ReactCollapsible from 'react-collapsible';
+import Image from 'next/image';
 import { ChevronRightIcon, ChevronDownIcon } from '@heroicons/react/solid';
 import { Logo, Footer } from '../components';
 
@@ -117,30 +118,36 @@ export default function Home() {
         <p>
           You can currently stake via the following methods:
           <ul>
-            <li>
-              <a target="_blank" href="https://plock.fi">
-                Plock.fi
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://celowallet.app">
-                Celo Wallet
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://celoterminal.com">
-                Celo Terminal
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://docs.celo.org/command-line-interface/introduction"
-              >
-                Celo CLI
-              </a>{' '}
-              - for advanced users only.
-            </li>
+            {[
+              ['Steakwallet', 'steakwallet.fi'],
+              ['Plock', 'plock.fi'],
+              ['Celo Wallet', 'celowallet.app'],
+              ['Celo Terminal', 'celoterminal.com'],
+              [
+                'Celo CLI',
+                'docs.celo.org/command-line-interface/introduction',
+                'celo.org',
+              ],
+            ].map(([name, domain, faviconBaseUrl]) => (
+              <li>
+                <a
+                  target="_blank"
+                  href={`https://${domain}`}
+                  className="inline-flex items-center space-x-2"
+                >
+                  <img
+                    src={`https://icons.duckduckgo.com/ip3/${
+                      faviconBaseUrl ?? domain
+                    }.ico`}
+                    height={24}
+                    width={24}
+                    className="m-0"
+                    style={{ margin: 0 }}
+                  />
+                  <span>{name}</span>
+                </a>
+              </li>
+            ))}
           </ul>
         </p>
       </Collapsible>
@@ -155,6 +162,9 @@ export default function Home() {
           <ul>
             <li>
               <a href="https://valoraapp.com">Valora</a>
+            </li>
+            <li>
+              <a href="https://steakwallet.fi">Steakwallet</a>
             </li>
             <li>
               <a href="https://celoterminal.com">Celo Terminal</a>
